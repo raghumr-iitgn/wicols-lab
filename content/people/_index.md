@@ -8,7 +8,7 @@ title = 'People'
 
 <div class="profile-card">
 
-<img src="/images/RMR.jpg"
+<img src="/wicols-lab/images/RMR.jpg"
      alt="Raghunandan M. Rao"
      class="profile-image">
 

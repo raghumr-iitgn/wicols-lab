@@ -7,7 +7,7 @@ title = 'Previous Research'
 ## 4G/5G PHY Layer Jamming and Mitigation
 
 <p align="center">
-  <img src="/images/Jamming_attacks_efficacy.png" width="500">
+  <img src="/wicols-lab/images/Jamming_attacks_efficacy.png" width="500">
 </p>
 
 The overarching contribution of this research was the qualitative, quantitative, and empirical investigation of the resiliency of critical control channels of 4G [1] and 5G [2] networks to intentional and unintentional RF interference. A key outcome was the analysis and mitigation of reference signal/pilot and non-pilot interference (PI/NPI) [3], [4], [5]. Prior to this research, it was a widely held notion that pilot signals must always be protected from interference [6], [7]. While this is true for demodulation reference signals, my work in [5] demonstrated *for the first time* that this is not always the case. Specifically, it showed that PI is desirable for cellular systems employing link adaptation based on pilot-aided channel state information (CSI) estimates and limited feedback. It also showed that ultra-low latency communications are vulnerable to NPI, and advocated the use of hybrid CSI estimation methods (methods that use pilot-aided as well as blind estimates) for robust link adaptation.
@@ -34,7 +34,7 @@ The overarching contribution of this research was the qualitative, quantitative,
 ## Link Adaptation for Terrestrial/Aerial Vehicular Communications
 
 <p align="center">
-  <img src="/images/Pilot_adapt_V2V_UAV_illustrate.png" width="500">
+  <img src="/wicols-lab/images/Pilot_adapt_V2V_UAV_illustrate.png" width="500">
 </p>
 
 Vehicular and UAV channels are known to be highly nonstationary [1], with different fading characteristics when compared to conventional cellular fading channels. To leverage this, I designed a rate-maximizing PHY layer adaptation protocol illustrated here, where the pilot overhead is dynamically adapted along the time axis as a function of the coherence time of the channel, and along the frequency axis as a function of the coherence bandwidth of the channel [2], [3]. Furthermore, I designed 'channel statistics codebooks' to quantize the fading conditions, and facilitate real-time waveform adaptation using limited CSI feedback schemes, to yield significant rate enhancements when compared to fixed pilot configurations.
@@ -53,7 +53,7 @@ Vehicular and UAV channels are known to be highly nonstationary [1], with differ
 ## 4G LTE meets Massive MIMO
 
 <p align="center">
-  <img src="/images/Agile_BF_scheduler_scheme.png" width="500">
+  <img src="/wicols-lab/images/Agile_BF_scheduler_scheme.png" width="500">
 </p>
 
 The use of massive MIMO technologies were introduced in LTE-Advanced Pro (3GPP Release 14). Even though LTE-A Pro/5G massive MIMO base stations can improve the rate of 4G networks in theory, this is inhibited by the incompatibility of LTE's CSI feedback mechanism with that of 5G. To bridge this gap, I designed a coordinated *agile beamformer-scheduler* system that is backward-compatible with 4G LTE in [1], shown here. While the massive MIMO array generated rapidly time-varying (agile) narrow beams to improve SINR in all regions of the cell at different times, scheduler coordination ensured that users actually experiencing the instantaneous SINR gain are served. This scheme significantly enhanced the cell throughput performance when compared to legacy LTE schemes, demonstrating that it is possible to leverage 5G infrastructure to provide significant coverage and rate enhancements in 4G LTE networks.
@@ -68,7 +68,7 @@ The use of massive MIMO technologies were introduced in LTE-Advanced Pro (3GPP R
 ## Advances in Link Adaptation for Pulsed Radar-Cellular Spectrum Sharing
 
 <p align="center">
-  <img src="/images/Fig_TVT_Act_vs_pilaid_SINR_frep_320.png" width="500">
+  <img src="/wicols-lab/images/Fig_TVT_Act_vs_pilaid_SINR_frep_320.png" width="500">
 </p>
 
 
@@ -86,7 +86,7 @@ Unlike conventional cellular systems, intermittent pulsed radar interference in 
 ## Stochastic Geometric Modeling of Spectrum Sharing Scenarios
 
 <p align="center">
-  <img src="/images/Fig1_Radar_mMIMO_SpecShare_Illustration.png" width="500">
+  <img src="/wicols-lab/images/Fig1_Radar_mMIMO_SpecShare_Illustration.png" width="500">
 </p>
 
 Tractable mathematical modeling of large spectrum sharing networks can yield fundamental insights into macro-scale performance trends, which are hard to obtain using sophisticated protocol-oriented system-level simulation studies. In [1],[2], I developed a tractable stochastic geometry-based framework to analyze performance of underlay radar-massive MIMO cellular spectrum sharing scenarios. Major novelties of this work was the modeling of 3D beamforming capabilities of the radar and the BSs, which uncovered the relationship between the cell-size and worst-case BS transmit beamforming gain. The analytical framework presented in this work (a) enables network designers to systematically isolate and evaluate the impact of each deployment parameter on the worst-case radar performance, and (b) complements industry-standard simulation methodologies, by establishing a baseline performance for each set of deployment parameters.
