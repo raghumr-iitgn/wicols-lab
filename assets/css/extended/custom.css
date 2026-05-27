@@ -1,0 +1,210 @@
+/* =========================================================
+   GLOBAL LINK STYLING
+   ---------------------------------------------------------
+   Controls hyperlink colors across the entire website.
+   ========================================================= */
+
+
+a {
+    color: #ff4500;
+}
+
+a:hover {
+    color: #ff1dce;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   WIDER CONTENT LAYOUT
+   ========================================================= */
+
+.main {
+    max-width: 1050px;
+}
+
+.post-content {
+    max-width: 1050px;
+}
+
+.first-entry,
+.page-header,
+.post-entry {
+    max-width: 1050px;
+}
+
+/* =========================================================
+   GLOBAL TYPOGRAPHY
+   ---------------------------------------------------------
+   Slightly smaller overall text size for a denser,
+   academic-style appearance.
+   ========================================================= */
+
+body {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   PROFILE CARD LAYOUT
+   ---------------------------------------------------------
+   Used on the People page for PI/student profiles.
+   Creates side-by-side image + text layout.
+   ========================================================= */
+
+.profile-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE STYLING
+   ---------------------------------------------------------
+   Controls profile image size and appearance.
+   ========================================================= */
+
+.profile-image {
+    width: 220px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PROFILE TEXT CONTENT
+   ========================================================= */
+
+.profile-content {
+    flex: 1;
+}
+
+
+/* =========================================================
+   PROFILE HEADINGS
+   ---------------------------------------------------------
+   Tightens spacing for cleaner faculty-profile appearance.
+   ========================================================= */
+
+.profile-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+.profile-content h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================================
+   MENU DROPDOWN SUPPORT
+   ---------------------------------------------------------
+   Enables custom dropdown menus in PaperMod navbar.
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Parent menu item container
+   Needed for absolute positioning of dropdowns
+   --------------------------------------------------------- */
+
+.menu-item {
+    position: relative;
+}
+
+
+/* ---------------------------------------------------------
+   Prevent parent containers from clipping dropdown menu
+   --------------------------------------------------------- */
+
+.menu,
+.header,
+.header-nav {
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   COMPACT DROPDOWN MENU
+   ========================================================= */
+
+.menu-item {
+    position: relative;
+}
+
+.menu,
+.header,
+.header-nav {
+    overflow: visible !important;
+}
+
+.sub-menu {
+
+    /* Hidden initially */
+    display: none;
+
+    /* Positioning */
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    /* Compact appearance */
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    /* Size */
+    min-width: 130px;
+    padding: 4px 0;
+
+    /* Remove bullets */
+    list-style: none;
+
+    /* Visibility */
+    z-index: 9999;
+
+    /* Light shadow */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.sub-menu li {
+    padding: 0;
+}
+
+.sub-menu li a {
+
+    display: block;
+
+    padding: 6px 12px;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    color: var(--primary);
+}
+
+.sub-menu li a:hover {
+
+    background: var(--code-bg);
+
+    text-decoration: none;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.dropdown-arrow {
+    margin-left: 4px;
+    font-size: 0.75em;
+}
+
+.research-image-right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}

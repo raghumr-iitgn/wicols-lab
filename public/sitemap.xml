@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/wicols-lab/</loc>
+    <lastmod>2026-05-18T13:59:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/openings/</loc>
+    <lastmod>2026-05-18T13:59:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/people/</loc>
+    <lastmod>2026-05-18T13:59:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/research/current/</loc>
+    <lastmod>2026-05-18T13:59:31+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/funding/</loc>
+    <lastmod>2026-05-18T13:59:31+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/research/previous/</loc>
+    <lastmod>2026-05-18T13:59:31+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/publications/</loc>
+    <lastmod>2026-05-18T13:59:31+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/research/</loc>
+    <lastmod>2026-05-18T13:59:31+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/wicols-lab/tags/</loc>
+  </url>
+</urlset>

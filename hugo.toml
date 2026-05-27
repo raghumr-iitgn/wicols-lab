@@ -1,0 +1,64 @@
+baseURL = "https://raghumr-iitgn.github.io/wicols-lab/"
+languageCode = "en-us"
+title = "WiCoLS Lab"
+theme = "PaperMod"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+pagerSize = 10
+
+[params]
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+
+[menu]
+
+[[menu.main]]
+identifier = "research"
+name = "Research"
+weight = 10
+
+[[menu.main]]
+identifier = "research-current"
+name = "Current"
+url = "/research/current/"
+weight = 1
+parent = "research"
+
+[[menu.main]]
+identifier = "research-previous"
+name = "Previous"
+url = "/research/previous/"
+weight = 2
+parent = "research"
+
+[[menu.main]]
+identifier = "publications"
+name = "Publications"
+url = "/publications/"
+weight = 20
+
+[[menu.main]]
+identifier = "people"
+name = "People"
+url = "/people/"
+weight = 30
+
+[[menu.main]]
+identifier = "funding"
+name = "Funding"
+url = "/funding/"
+weight = 40
+
+[[menu.main]]
+identifier = "openings"
+name = "Openings"
+url = "/openings/"
+weight = 50

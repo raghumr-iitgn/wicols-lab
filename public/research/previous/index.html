@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/wicols-lab/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=wicols-lab/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Previous Research | WiCoLS Lab</title>
+<meta name="keywords" content="">
+<meta name="description" content="4G/5G PHY Layer Jamming and Mitigation
+
+  
+
+The overarching contribution of this research was the qualitative, quantitative, and empirical investigation of the resiliency of critical control channels of 4G [1] and 5G [2] networks to intentional and unintentional RF interference. A key outcome was the analysis and mitigation of reference signal/pilot and non-pilot interference (PI/NPI) [3], [4], [5]. Prior to this research, it was a widely held notion that pilot signals must always be protected from interference [6], [7]. While this is true for demodulation reference signals, my work in [5] demonstrated for the first time that this is not always the case. Specifically, it showed that PI is desirable for cellular systems employing link adaptation based on pilot-aided channel state information (CSI) estimates and limited feedback. It also showed that ultra-low latency communications are vulnerable to NPI, and advocated the use of hybrid CSI estimation methods (methods that use pilot-aided as well as blind estimates) for robust link adaptation.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/wicols-lab/research/previous/">
+<link crossorigin="anonymous" href="/wicols-lab/assets/css/stylesheet.65da1f511b61b6b20d2abd42f6e04973943aa1f1505b6cb6573071dad726a115.css" integrity="sha256-ZdofURthtrINKr1C9uBJc5Q6ofFQW2y2VzBx2tcmoRU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/wicols-lab/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/wicols-lab/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/wicols-lab/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/wicols-lab/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/wicols-lab/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/wicols-lab/research/previous/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/wicols-lab/research/previous/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/wicols-lab/" accesskey="h" title="WiCoLS Lab (Alt + H)">WiCoLS Lab</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 30 30" fill="none" stroke="currentColor"
+                    stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <path d="M5 13a10 10 0 0 1 14 0"></path>
+                    <path d="M8.5 16.5a5 5 0 0 1 7 0"></path>
+                    <path d="M12 20h.01"></path>
+                </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg"
+                    width="32" height="32"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <path d="M5 17a10 10 0 0 0 14 0"></path>
+                    <path d="M8.5 13.5a5 5 0 0 0 7 0"></path>
+                    <path d="M12 10h.01"></path>
+                </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li class="menu-item">
+
+                <a href="http://localhost:1313/wicols-lab/"
+                   title="Research">
+
+                    <span>Research</span>
+                        <span class="dropdown-arrow">▾</span>
+
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="http://localhost:1313/wicols-lab/research/current/">
+                            Current
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:1313/wicols-lab/research/previous/">
+                            Previous
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+            <li class="menu-item">
+
+                <a href="http://localhost:1313/wicols-lab/publications/"
+                   title="Publications">
+
+                    <span>Publications</span>
+
+                </a>
+
+            </li>
+            <li class="menu-item">
+
+                <a href="http://localhost:1313/wicols-lab/people/"
+                   title="People">
+
+                    <span>People</span>
+
+                </a>
+
+            </li>
+            <li class="menu-item">
+
+                <a href="http://localhost:1313/wicols-lab/funding/"
+                   title="Funding">
+
+                    <span>Funding</span>
+
+                </a>
+
+            </li>
+            <li class="menu-item">
+
+                <a href="http://localhost:1313/wicols-lab/openings/"
+                   title="Openings">
+
+                    <span>Openings</span>
+
+                </a>
+
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/wicols-lab/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/wicols-lab/research/">Research</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+  <h1>
+    Previous Research
+  </h1>
+</header>
+<div class="post-content md-content"><h2 id="4g5g-phy-layer-jamming-and-mitigation">4G/5G PHY Layer Jamming and Mitigation<a hidden class="anchor" aria-hidden="true" href="#4g5g-phy-layer-jamming-and-mitigation">#</a></h2>
+<p align="center">
+  <img src="/images/Jamming_attacks_efficacy.png" width="500">
+</p>
+<p>The overarching contribution of this research was the qualitative, quantitative, and empirical investigation of the resiliency of critical control channels of 4G [1] and 5G [2] networks to intentional and unintentional RF interference. A key outcome was the analysis and mitigation of reference signal/pilot and non-pilot interference (PI/NPI) [3], [4], [5]. Prior to this research, it was a widely held notion that pilot signals must always be protected from interference [6], [7]. While this is true for demodulation reference signals, my work in [5] demonstrated <em>for the first time</em> that this is not always the case. Specifically, it showed that PI is desirable for cellular systems employing link adaptation based on pilot-aided channel state information (CSI) estimates and limited feedback. It also showed that ultra-low latency communications are vulnerable to NPI, and advocated the use of hybrid CSI estimation methods (methods that use pilot-aided as well as blind estimates) for robust link adaptation.</p>
+<h4 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h4>
+<ol>
+<li>
+<p>M. Lichtman, R. P. Jover, M. Labib, R. M. Rao, V. Marojevic, and J. H. Reed, &ldquo;LTE/LTE-A Jamming, Spoofing, and Sniffing: Threat Assessment and Mitigation,&rdquo; <em>IEEE Communications Magazine</em>, vol. 54, no. 4, pp. 54–61, April 2016.</p>
+</li>
+<li>
+<p>M. Lichtman, R. M. Rao, V. Marojevic, J. Reed and R. P. Jover, &ldquo;5G NR Jamming, Spoofing, and Sniffing: Threat Assessment and Mitigation,&rdquo; <em>Proc. IEEE ICC Workshops</em>, pp. 1-6, May 2018.</p>
+</li>
+<li>
+<p>R. M. Rao, S. Ha, V. Marojevic, and J. H. Reed, &ldquo;LTE PHY Layer Vulnerability Analysis and Testing Using Open-Source SDR Tools,&rdquo; <em>Proc. IEEE MILCOM</em>, pp. 744–749, October 2017.</p>
+</li>
+<li>
+<p>V. Marojevic, R. M. Rao, S. Ha and J. H. Reed, &ldquo;Performance Analysis of a Mission-Critical Portable LTE System in Targeted RF Interference,&rdquo; <em>Proc. IEEE VTC-Fall</em>, pp. 1-6, September 2017.</p>
+</li>
+<li>
+<p>R. M. Rao, V. Marojevic, and J. H. Reed, &ldquo;Analysis of Non-Pilot Interference on Link Adaptation and Latency in Cellular Networks,&rdquo; <em>Proc. IEEE VTC-Spring</em>, pp. 1–5, April 2019.</p>
+</li>
+<li>
+<p>T. C. Clancy, &ldquo;Efficient OFDM Denial: Pilot Jamming and Pilot Nulling,&rdquo; <em>Proc. IEEE ICC</em>, pp. 1-5, June 2011.</p>
+</li>
+<li>
+<p>M. Karlsson, E. Björnson and E. G. Larsson, &ldquo;Jamming a TDD Point-to-Point Link Using Reciprocity-Based MIMO,&rdquo; <em>IEEE Transactions on Information Forensics and Security</em>, vol. 12, no. 12, pp. 2957-2970, Dec. 2017.</p>
+</li>
+</ol>
+<hr>
+<h2 id="link-adaptation-for-terrestrialaerial-vehicular-communications">Link Adaptation for Terrestrial/Aerial Vehicular Communications<a hidden class="anchor" aria-hidden="true" href="#link-adaptation-for-terrestrialaerial-vehicular-communications">#</a></h2>
+<p align="center">
+  <img src="/images/Pilot_adapt_V2V_UAV_illustrate.png" width="500">
+</p>
+<p>Vehicular and UAV channels are known to be highly nonstationary [1], with different fading characteristics when compared to conventional cellular fading channels. To leverage this, I designed a rate-maximizing PHY layer adaptation protocol illustrated here, where the pilot overhead is dynamically adapted along the time axis as a function of the coherence time of the channel, and along the frequency axis as a function of the coherence bandwidth of the channel [2], [3]. Furthermore, I designed &lsquo;channel statistics codebooks&rsquo; to quantize the fading conditions, and facilitate real-time waveform adaptation using limited CSI feedback schemes, to yield significant rate enhancements when compared to fixed pilot configurations.</p>
+<h4 id="references-1">References<a hidden class="anchor" aria-hidden="true" href="#references-1">#</a></h4>
+<ol>
+<li>
+<p>L. Bernado, T. Zemen, F. Tufvesson, A. F. Molisch, and C. F. Mecklenbrauker, &ldquo;Delay and Doppler Spreads of Nonstationary Vehicular Channels for Safety-Relevant Scenarios,&rdquo; <em>IEEE Transactions on Vehicular Technology</em>, vol. 63, no. 1, pp. 82–93, Jan 2014.</p>
+</li>
+<li>
+<p>R. M. Rao, V. Marojevic, and J. H. Reed, &ldquo;Adaptive Pilot Patterns for CA-OFDM Systems in Nonstationary Wireless Channels,&rdquo; <em>IEEE Transactions on Vehicular Technology</em>, vol. 67, no. 2, pp. 1231–1244, Feb 2018.</p>
+</li>
+<li>
+<p>R. M. Rao, V. Marojevic, and J. Reed, &ldquo;Rate-Maximizing OFDM Pilot Patterns for UAV Communications in Nonstationary A2G Channels,&rdquo; <em>Proc. IEEE VTC-Fall</em>, pp. 1-5, August 2018.</p>
+</li>
+</ol>
+<hr>
+<h2 id="4g-lte-meets-massive-mimo">4G LTE meets Massive MIMO<a hidden class="anchor" aria-hidden="true" href="#4g-lte-meets-massive-mimo">#</a></h2>
+<p align="center">
+  <img src="/images/Agile_BF_scheduler_scheme.png" width="500">
+</p>
+<p>The use of massive MIMO technologies were introduced in LTE-Advanced Pro (3GPP Release 14). Even though LTE-A Pro/5G massive MIMO base stations can improve the rate of 4G networks in theory, this is inhibited by the incompatibility of LTE&rsquo;s CSI feedback mechanism with that of 5G. To bridge this gap, I designed a coordinated <em>agile beamformer-scheduler</em> system that is backward-compatible with 4G LTE in [1], shown here. While the massive MIMO array generated rapidly time-varying (agile) narrow beams to improve SINR in all regions of the cell at different times, scheduler coordination ensured that users actually experiencing the instantaneous SINR gain are served. This scheme significantly enhanced the cell throughput performance when compared to legacy LTE schemes, demonstrating that it is possible to leverage 5G infrastructure to provide significant coverage and rate enhancements in 4G LTE networks.</p>
+<h4 id="references-2">References<a hidden class="anchor" aria-hidden="true" href="#references-2">#</a></h4>
+<ol>
+<li>R. M. Rao, D. Bethanabhotla, and R. C. Palat, “Enhancing Throughput Using Agile Beam Switching and User Scheduling in Cellular Systems,” <em>Proc. IEEE VTC-Fall</em>, pp. 1-7, 2019.</li>
+</ol>
+<hr>
+<h2 id="advances-in-link-adaptation-for-pulsed-radar-cellular-spectrum-sharing">Advances in Link Adaptation for Pulsed Radar-Cellular Spectrum Sharing<a hidden class="anchor" aria-hidden="true" href="#advances-in-link-adaptation-for-pulsed-radar-cellular-spectrum-sharing">#</a></h2>
+<p align="center">
+  <img src="/images/Fig_TVT_Act_vs_pilaid_SINR_frep_320.png" width="500">
+</p>
+<p>Unlike conventional cellular systems, intermittent pulsed radar interference in shared spectrum results in two channel states: (a) ‘fading channel (FC) state’ in the absence of radar, and (b) ‘interference channel (IC) state’ in the presence of radar, as shown in the figure. In [1], I demonstrated that limited CSI feedback schemes based on pilot-aided estimates fail to estimate the IC’s CSI, rendering the cellular system vulnerable to link adaptation failure. I resolved this in [2], where I proposed a comprehensive semi-blind SINR estimation framework using pilot-aided estimates and a robust max-min heuristic to compute the wideband SINR of radar-impaired subframes. To handle channel bimodality, I proposed (a) dual CSI feedback, where all users report their quantized CSI for both channel states, and (b) radar indicator feedback, where a single user per cell feeds back quantized information about future radar-impaired subframes. Unifying these schemes resulted in huge simultaneous improvements in the downlink throughput, BLER, and latency.</p>
+<h4 id="references-3">References<a hidden class="anchor" aria-hidden="true" href="#references-3">#</a></h4>
+<ol>
+<li>
+<p>R. M. Rao, V. Marojevic and J. H. Reed, &ldquo;Probability of Pilot Interference in Radar-Cellular Coexistence,&rdquo; <em>IEEE Communications Letters</em>, vol. 24, no. 8, pp. 1678-1682, 2020.</p>
+</li>
+<li>
+<p>R. M. Rao, V. Marojevic and J. H. Reed, &ldquo;Semi-Blind Post-Equalizer SINR Estimation and Dual CSI Feedback for Radar-Cellular Coexistence,&rdquo; <em>IEEE Transactions on Vehicular Technology</em>, vol. 69, no. 9, pp. 9720-9735, 2020.</p>
+</li>
+</ol>
+<hr>
+<h2 id="stochastic-geometric-modeling-of-spectrum-sharing-scenarios">Stochastic Geometric Modeling of Spectrum Sharing Scenarios<a hidden class="anchor" aria-hidden="true" href="#stochastic-geometric-modeling-of-spectrum-sharing-scenarios">#</a></h2>
+<p align="center">
+  <img src="/images/Fig1_Radar_mMIMO_SpecShare_Illustration.png" width="500">
+</p>
+<p>Tractable mathematical modeling of large spectrum sharing networks can yield fundamental insights into macro-scale performance trends, which are hard to obtain using sophisticated protocol-oriented system-level simulation studies. In [1],[2], I developed a tractable stochastic geometry-based framework to analyze performance of underlay radar-massive MIMO cellular spectrum sharing scenarios. Major novelties of this work was the modeling of 3D beamforming capabilities of the radar and the BSs, which uncovered the relationship between the cell-size and worst-case BS transmit beamforming gain. The analytical framework presented in this work (a) enables network designers to systematically isolate and evaluate the impact of each deployment parameter on the worst-case radar performance, and (b) complements industry-standard simulation methodologies, by establishing a baseline performance for each set of deployment parameters.</p>
+<p>In [3], we proposed a mathematical framework to harmonize spectral efficiency and coverage performance in underlay spectrum sharing scenarios between 3D UAV and D2D networks, using tools from stochastic geometry and machine learning. A major novelty was the flexibility of this framework to incorporate arbitrary distributions of UAVs in 3D space.</p>
+<h4 id="references-4">References<a hidden class="anchor" aria-hidden="true" href="#references-4">#</a></h4>
+<ol>
+<li>
+<p>R. M. Rao, H. S. Dhillon, V. Marojevic, J. H. Reed, &ldquo;Analysis of Worst-Case Interference in Underlay Radar-Massive MIMO Spectrum Sharing Scenarios,&rdquo; <em>Proc. IEEE GLOBECOM</em>, pp. 1-6, 2019.</p>
+</li>
+<li>
+<p>R. M. Rao, H. S. Dhillon, V. Marojevic and J. H. Reed, &ldquo;Underlay Radar-Massive MIMO Spectrum Sharing: Modeling Fundamentals and Performance Analysis,&rdquo; <em>IEEE Transactions on Wireless Communications</em>, 2021.</p>
+</li>
+<li>
+<p>B. Shang, L. Liu, R. M. Rao, V. Marojevic, J. H. Reed, &ldquo;3D Spectrum Sharing for Hybrid D2D and UAV Networks,&rdquo; <em>IEEE Transactions on Communications</em>, vol. 68, no. 9, pp. 5375-5389, 2020.</p>
+</li>
+</ol>
+
+
+</div>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/wicols-lab/">WiCoLS Lab</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
