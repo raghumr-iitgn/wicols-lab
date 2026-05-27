@@ -6,7 +6,7 @@ title = 'Current Research'
 
 ## Beyond Convex Hull (BCH) Localization
 <p align="center">
-  <img src="/images/Dimension_Adatpation.png" width="500">
+  <img src="/wicols-lab/images/Dimension_Adatpation.png" width="500">
 </p>
 
 Conventional localization systems are typically designed assuming that the target lies inside the convex hull formed by the anchors. However, many emerging vehicular and UAV localization scenarios violate this assumption, since the targets are often located far outside the anchor region. In [1], [2], we have developed a mathematical framework to characterize the geometric limits of Time-of-Arrival (ToA)-based localization in such beyond convex hull scenarios. A key contribution was the derivation of a closed-form asymptotic scaling law showing that the ToA Dilution of Precision (DOP) increases linearly with the target distance for far-away targets. Using these insights, we've introduced the notion of Range-Normalized DOP (RNDOP) and formulated robust anchor placement strategies that minimize the worst-case positioning error for far-away targets [2]. Since the resulting optimization problem is highly non-convex under practical deployment constraints, we have developed iterative heuristic algorithms with different performance-complexity tradeoffs for robust anchor placement in vehicular and UAV systems. These frameworks provide practical design tools for localization systems employing vehicle-mounted or aerial anchors, and establish fundamental limits on achievable positioning accuracy in next-generation wireless localization networks.
@@ -23,7 +23,7 @@ Currently, we are
 ## Integrated Sensing and Communications
 
 <p align="center">
-  <img src="/images/PO_PD.png" width="600">
+  <img src="/wicols-lab/images/PO_PD.png" width="600">
 </p>
 
 Integrated sensing and communications (ISAC) is expected to become an important capability in future 6G wireless systems, where the same OFDM waveform simultaneously supports wireless communication and environmental sensing. In [1], we investigated monostatic OFDM-ISAC architectures under realistic hardware impairments such as residual self-interference, phase noise, and fractional-delay leakage. A key contribution of this work was identifying a fundamental limitation of conventional pilot-only sensing frameworks, where sparse pilot patterns generate deterministic ambiguity replicas in the range-Doppler map, resulting in ghost targets and elevated false-alarm rates in multi-target sensing scenarios. To address this, we proposed a data-aided sensing framework that exploits the full transmitted OFDM waveform—including both pilot and data-bearing symbols—to construct a denser sensing reference. This significantly suppresses pilot-induced ambiguities, improves coherent integration gain, and yields substantially better multi-target detection performance under realistic OFDM-ISAC operating conditions.
